@@ -1,0 +1,24 @@
+{
+  "name": "cycle-pusher",
+  "version": "1.0.0",
+  "description": "Cycle.js driver for pusher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unhappychoice/cycle-pusher.git"
+  },
+  "keywords": [
+    "pusher",
+    "socket",
+    "realtime"
+  ],
+  "author": "unhappychoice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unhappychoice/cycle-pusher/issues"
+  },
+  "homepage": "https://github.com/unhappychoice/cycle-pusher#readme"
+}
