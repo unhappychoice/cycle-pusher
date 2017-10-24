@@ -4,7 +4,11 @@
   "description": "Cycle.js driver for pusher",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node fuse.js",
+    "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
+    "watch:lint": "watch 'npm run lint' src",
+    "watch:build": "watch 'npm run build' src",
+    "watch": "watch 'npm run lint && npm run build' src"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/unhappychoice/cycle-pusher/issues"
   },
-  "homepage": "https://github.com/unhappychoice/cycle-pusher#readme"
+  "homepage": "https://github.com/unhappychoice/cycle-pusher#readme",
+  "devDependencies": {
+    "fuse-box": "^2.2.31",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3",
+    "watch": "^1.0.2",
+    "xstream": "^10.9.0"
+  }
 }
