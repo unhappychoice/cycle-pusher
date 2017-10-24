@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@cycle/run@3.x":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.3.0.tgz#a00dd638e0e9349fcf0d7b7628f9f37309559b9f"
+  dependencies:
+    xstream "10.x || 11.x"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1768,7 +1774,7 @@ supports-color@^4.0.0, supports-color@^4.4.0:
   dependencies:
     has-flag "^2.0.0"
 
-symbol-observable@^1.0.2:
+symbol-observable@^1.0.2, symbol-observable@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.0.4.tgz#29bf615d4aa7121bdd898b22d4b3f9bc4e2aa03d"
 
@@ -1929,6 +1935,12 @@ ws@^1.1.1:
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"
+
+"xstream@10.x || 11.x":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.0.0.tgz#2018c3c4e573f76b62b9cf96a17a46876ab120e0"
+  dependencies:
+    symbol-observable "^1.0.4"
 
 xstream@^10.9.0:
   version "10.9.0"
