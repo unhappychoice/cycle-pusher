@@ -27,7 +27,9 @@
   "homepage": "https://github.com/unhappychoice/cycle-pusher#readme",
   "devDependencies": {
     "@cycle/run": "3.x",
+    "@types/pusher-js": "3.0.29",
     "fuse-box": "^2.2.31",
+    "pusher-js": "^4.2.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3",
     "watch": "^1.0.2",
