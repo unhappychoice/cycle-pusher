@@ -2,7 +2,7 @@
   "name": "cycle-pusher",
   "version": "1.0.0",
   "description": "Cycle.js driver for pusher",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "node fuse.js",
     "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",

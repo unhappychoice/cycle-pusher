@@ -2,6 +2,11 @@ const { FuseBox } = require('fuse-box');
 
 const fuse = FuseBox.init({
   homeDir: 'src',
+  package: {
+    name: "cycle-pusher",
+    main: "src/index.ts"
+  },
+  globals: {"cycle-pusher": "*"},
   output: 'dist/$name.js',
   plugins: []
 });
