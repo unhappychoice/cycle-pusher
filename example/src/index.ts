@@ -20,7 +20,7 @@ function main(sources: Sources): Sinks {
 
     const payload$ = Stream.periodic(1000)
         .mapTo(1)
-        .fold(([acc, number]) => acc + number, 0)
+        .fold((acc, number) => acc + number, 0)
         .map(number => ({
             channelName: "channel1",
             eventName: "client-event1",

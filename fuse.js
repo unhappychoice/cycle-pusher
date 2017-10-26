@@ -8,6 +8,7 @@ const fuse = FuseBox.init({
   },
   globals: {"cycle-pusher": "*"},
   output: 'dist/$name.js',
+  target: "browser",
   plugins: []
 });
 
