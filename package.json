@@ -1,6 +1,6 @@
 {
   "name": "cycle-pusher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cycle.js driver for pusher",
   "main": "dist/index.js",
   "scripts": {
@@ -25,14 +25,12 @@
     "url": "https://github.com/unhappychoice/cycle-pusher/issues"
   },
   "homepage": "https://github.com/unhappychoice/cycle-pusher#readme",
-  "peerDependencies": {
+  "dependencies": {
     "pusher-js": "^4.2.1"
-  },
-  "optionalDependencies": {
-    "@types/pusher-js": "3.0.29"
   },
   "devDependencies": {
     "@cycle/run": "3.x",
+    "@types/pusher-js": "3.0.29",
     "fuse-box": "^2.2.31",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3",
