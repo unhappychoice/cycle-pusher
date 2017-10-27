@@ -6,7 +6,7 @@ import {MainPusherSource} from "./MainPusherSource";
 
 const pusher = require("pusher-js");
 
-export const makePusherDirver = (
+export const makePusherDriver = (
     app_key: string, channelNames: string[], configuration: Config
 ): Driver<Stream<PayloadInput>, PusherSource> => {
     const socket = new pusher(app_key, configuration);

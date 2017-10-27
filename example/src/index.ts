@@ -1,7 +1,7 @@
 import {run} from '@cycle/run';
 import {div, DOMSource, makeDOMDriver, VNode} from '@cycle/dom';
 import Stream from "xstream";
-import {makePusherDirver, PayloadInput, PusherSource} from "cycle-pusher";
+import {makePusherDriver, PayloadInput, PusherSource} from "cycle-pusher";
 
 interface Sources {
     DOM: DOMSource;
@@ -40,5 +40,5 @@ const config = {
 
 run(main, {
     DOM: makeDOMDriver('#main-container'),
-    pusher: makePusherDirver(app_key, ["channel1"], config)
+    pusher: makePusherDriver(app_key, ["channel1"], config)
 });

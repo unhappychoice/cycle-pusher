@@ -1,2 +1,2 @@
-export {makePusherDirver} from "./driver";
+export {makePusherDriver} from "./driver";
 export {PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
