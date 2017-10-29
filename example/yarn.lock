@@ -454,9 +454,9 @@ cssauron@^1.4.0:
   dependencies:
     through X.X.X
 
-cycle-pusher@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/cycle-pusher/-/cycle-pusher-1.0.3.tgz#d34911ee00fa40392b7f9ab7062877e288cf3613"
+cycle-pusher@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/cycle-pusher/-/cycle-pusher-2.0.0.tgz#fd0ba10c0a0592f11b62b6541ac3ed4f2b0c333c"
   dependencies:
     "@types/pusher-js" "3.0.29"
     pusher-js "^4.2.1"
