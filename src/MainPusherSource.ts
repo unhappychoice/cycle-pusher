@@ -1,23 +1,20 @@
 import Stream from "xstream";
 import {PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
+import {Pusher} from "pusher-js";
 
 export class MainPusherSource implements PusherSource {
     private events: Stream<PayloadOutput>;
+    private pusher: Pusher;
+    private subscriptions: string[] = [];
 
-    constructor(channels: object) {
+    constructor(pusher: Pusher) {
         this.events = Stream.create();
-
-        Object.keys(channels).forEach((key) => {
-            const channel = channels[key];
-            channel.bind_global((event, data) => {
-                const channelName = channel.name;
-                const eventName = event;
-                this.events.shamefullySendNext({ channelName, eventName, data })
-            });
-        });
+        this.pusher = pusher;
     }
 
     public select(channelName: string, eventName: string): Stream<any> {
+        this.bindChannel(channelName, eventName);
+
         return this.events
             .filter(event => event.channelName == channelName)
             .filter(event => event.eventName == eventName)
@@ -30,5 +27,17 @@ export class MainPusherSource implements PusherSource {
 
     public isolateSource(source: PusherSource, scope: string): PusherSource {
         return source;
+    }
+
+    private bindChannel(channelName: string, eventName: string) {
+        const identifier  = `${channelName}/${eventName}`;
+        if(this.subscriptions.indexOf(identifier) !== -1) return;
+        const channel = this.pusher.subscribe(channelName);
+
+        channel.bind_global((event, data) => {
+            this.events.shamefullySendNext({channelName, eventName, data})
+        });
+
+        this.subscriptions.push(identifier);
     }
 }

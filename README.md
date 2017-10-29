@@ -6,7 +6,7 @@ cycle-pusher is pusher client for [cycle.js](https://cycle.js.org/)
 
 ### Types
 ```typescript
-const makePusherDirver = (app_key: string, channelNames: string[], configuration: Config): Driver<Stream<PayloadInput>, PusherSource>
+const makePusherDirver = (app_key: string, configuration: Config): Driver<Stream<PayloadInput>, PusherSource>
 
 interface PusherSource {
     select(channelName: string, eventName: string): Stream<any>;
@@ -48,7 +48,7 @@ const config = { // See pusher document
 };
 
 run(main, {
-    pusher: makePusherDirver(app_key, ["channel1"], config)
+    pusher: makePusherDirver(app_key, config)
 });
 
 ```
