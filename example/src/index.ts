@@ -40,5 +40,5 @@ const config = {
 
 run(main, {
     DOM: makeDOMDriver('#main-container'),
-    pusher: makePusherDriver(app_key, ["channel1"], config)
+    pusher: makePusherDriver(app_key, config)
 });
