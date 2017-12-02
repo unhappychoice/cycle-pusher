@@ -1,6 +1,6 @@
 {
   "name": "cycle-pusher",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Cycle.js driver for pusher",
   "main": "dist/index.js",
   "ts:main": "src/index.ts",
@@ -33,7 +33,7 @@
   },
   "peerDependencies": {
     "@cycle/run": "3.x",
-    "xstream": "^10.9.0"
+    "xstream": "^11.*"
   },
   "devDependencies": {
     "@cycle/run": "3.x",
