@@ -3,6 +3,8 @@
   "version": "2.0.0",
   "description": "Cycle.js driver for pusher",
   "main": "dist/index.js",
+  "ts:main": "src/index.ts",
+  "types": "src/index.ts",
   "scripts": {
     "build": "node fuse.js",
     "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
@@ -29,12 +31,16 @@
     "pusher-js": "^4.2.1",
     "@types/pusher-js": "3.0.29"
   },
+  "peerDependencies": {
+    "@cycle/run": "3.x",
+    "xstream": "^10.9.0"
+  },
   "devDependencies": {
     "@cycle/run": "3.x",
-    "fuse-box": "^2.2.31",
+    "fuse-box": "^3.0.0-next.26",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3",
     "watch": "^1.0.2",
-    "xstream": "^10.9.0"
+    "xstream": "^11.*"
   }
 }

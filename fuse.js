@@ -4,13 +4,15 @@ const fuse = FuseBox.init({
   homeDir: 'src',
   package: {
     name: "cycle-pusher",
-    main: "src/index.ts"
+    main: "index.ts"
   },
+  cache: false,
   globals: {"cycle-pusher": "*"},
   output: 'dist/$name.js',
   target: "browser",
+  sourceMaps: { project: true, vendor: true },
   plugins: []
 });
 
-fuse.bundle('index').instructions('> index.ts');
+fuse.bundle('index').instructions('index.ts');
 fuse.run();

@@ -15,7 +15,6 @@
     "stripInternal": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": false,
-    "rootDir": ".",
     "sourceMap": true,
     "declaration": true,
     "listFiles": false,
