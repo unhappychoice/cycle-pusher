@@ -14,5 +14,5 @@ const fuse = FuseBox.init({
   plugins: []
 });
 
-fuse.bundle('index').instructions('index.ts');
+fuse.bundle('index').instructions('^!index.ts');
 fuse.run();
