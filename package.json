@@ -6,8 +6,8 @@
   "ts:main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
-    "build": "node fuse.js",
-    "lint": "./node_modules/.bin/tslint -c tslint.json src/**/*.ts",
+    "build": "webpack",
+    "lint": "tslint src/**/*.ts",
     "watch:lint": "watch 'npm run lint' src",
     "watch:build": "watch 'npm run build' src",
     "watch": "watch 'npm run lint && npm run build' src"
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/unhappychoice/cycle-pusher#readme",
   "dependencies": {
-    "@types/pusher-js": "3.0.29",
+    "@types/pusher-js": "3.0.30",
     "pusher-js": "^4.2.1"
   },
   "peerDependencies": {
@@ -37,10 +37,11 @@
   },
   "devDependencies": {
     "@cycle/run": "3.x",
-    "fuse-box": "^3.0.0-next.26",
+    "ts-loader": "^3.2.0",
     "tslint": "^5.7.0",
-    "typescript": "^2.5.3",
+    "typescript": "^2.6.2",
     "watch": "^1.0.2",
+    "webpack": "^3.10.0",
     "xstream": "^11.*"
   }
 }

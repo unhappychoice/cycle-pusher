@@ -8,7 +8,7 @@ export class MainPusherSource implements PusherSource {
     private subscriptions: string[] = [];
 
     constructor(pusher: Pusher) {
-        this.events = Stream.create();
+        this.events = Stream.create<PayloadOutput>();
         this.pusher = pusher;
     }
 
@@ -21,21 +21,21 @@ export class MainPusherSource implements PusherSource {
             .map(event => event.data);
     }
 
-    public isolateSink(sink: Stream<PayloadInput>, scope: string): Stream<PayloadInput> {
+    public isolateSink(sink: Stream<PayloadInput>, _: string): Stream<PayloadInput> {
         return sink;
     }
 
-    public isolateSource(source: PusherSource, scope: string): PusherSource {
+    public isolateSource(source: PusherSource, _: string): PusherSource {
         return source;
     }
 
     private bindChannel(channelName: string, eventName: string) {
         const identifier  = `${channelName}/${eventName}`;
         if(this.subscriptions.indexOf(identifier) !== -1) return;
-        const channel = this.pusher.subscribe(channelName);
+        const channel = this.pusher.subscribe(channelName) as any;
 
-        channel.bind_global((event, data) => {
-            this.events.shamefullySendNext({channelName, eventName, data})
+        channel.bind_global((_: any, data: any) => {
+            this.events.shamefullySendNext({ channelName, eventName, data })
         });
 
         this.subscriptions.push(identifier);
