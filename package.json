@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack && dts-bundle --name cycle-pusher --baseDir dist --main dist/src/index.d.ts --out index.d.ts",
+    "build": "tsc",
     "lint": "tslint src/**/*.ts",
     "watch:lint": "watch 'npm run lint' src",
     "watch:build": "watch 'npm run build' src",
@@ -36,12 +36,9 @@
   },
   "devDependencies": {
     "@cycle/run": "3.x",
-    "dts-bundle": "^0.7.3",
-    "ts-loader": "^3.2.0",
     "tslint": "^5.7.0",
     "typescript": "^2.6.2",
     "watch": "^1.0.2",
-    "webpack": "^3.10.0",
     "xstream": "^11.*"
   }
 }
