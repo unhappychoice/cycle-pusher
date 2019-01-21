@@ -5,14 +5,15 @@
   "main": "src/index.js",
   "dependencies": {
     "@cycle/dom": "^18.3.0",
-    "@cycle/http": "14.2.0",
+    "@cycle/http": "14.10.0",
     "@cycle/isolate": "^3.1.0",
     "@cycle/run": "^3.2.0",
     "@types/pusher-js": "3.0.29",
     "cycle-pusher": "^2.0.2",
-    "fuse-box": "^3.0.0-nex.26",
+    "fuse-box": "^3.7.1",
     "pusher-js": "^4.2.1",
     "typescript": "^2.5.3",
+    "ws": "^3.3.1",
     "xstream": "11.x.x"
   },
   "scripts": {
