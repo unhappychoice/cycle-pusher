@@ -1,6 +1,5 @@
 # cycle-pusher
 [![npm version](https://badge.fury.io/js/cycle-pusher.svg)](https://badge.fury.io/js/cycle-pusher)
-[![Dependency Status](https://gemnasium.com/badges/github.com/unhappychoice/cycle-pusher.svg)](https://gemnasium.com/github.com/unhappychoice/cycle-pusher)
 
 cycle-pusher is pusher client for [cycle.js](https://cycle.js.org/)
 
