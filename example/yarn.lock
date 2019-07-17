@@ -77,15 +77,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.10.tgz#51babf9c7deadd5343620055fc8aff7995c8b031"
   integrity sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
 
-"@types/pusher-js@3.0.29":
-  version "3.0.29"
-  resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-3.0.29.tgz#c2d798a46a784799a236bb3aea396e165c53ec30"
-  integrity sha1-wteYpGp4R5miNrs66jluFlxT7DA=
-
 "@types/pusher-js@3.0.30":
   version "3.0.30"
   resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-3.0.30.tgz#4e3cffeb2bc8bbd52fd6f42d97662bc4cf07b596"
   integrity sha512-ooHwLs4nq8EUKlgKVvQI+zSryBAJkFGkhYu2+k1hDg/b34IBq08+k2WP27hjzRJB6kUOWizZzwqKy/tAsEQGDQ==
+
+"@types/pusher-js@4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-4.2.2.tgz#129fae1854255c5883e874137cd045c48d0a422a"
+  integrity sha512-LP9isBRAFlNzQohQtySJxJjzmy4zQCcv5xGZD2G3rsDnTWfpEkFKyLw3x9711pFAXwwUl9ZivxKkcnFr8umSAQ==
 
 "@types/superagent@3.8.4":
   version "3.8.4"
