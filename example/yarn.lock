@@ -24,12 +24,12 @@
     superagent "^3.8.3"
     xstream "11.x"
 
-"@cycle/isolate@^3.1.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@cycle/isolate/-/isolate-3.4.0.tgz#df693726c9593e5d903309da7dc5692d57720489"
-  integrity sha512-mOAlwLeTr6wTdHwKWAfaFeuKeD540kKcJlLVKsqLhbfLp6orF1B3CzMfFNlmqNY30t6o6TORCFfV+0EATK9Y7Q==
+"@cycle/isolate@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@cycle/isolate/-/isolate-5.0.0.tgz#ccbb43bae2254bb76c7c436285b4a455056b8e50"
+  integrity sha512-9MS+Z7AjRzYljOc+AqSQUQBmQw0473rqv6op0dyhumILydcGirTmR6hrilJ/IYcYjeDEYaVfftYuIu15kU/Qcg==
   dependencies:
-    "@cycle/run" "^4.4.0"
+    "@cycle/run" "^5.2.0"
     xstream "^11.7.0"
 
 "@cycle/run@*", "@cycle/run@^5.2.0":
@@ -45,14 +45,6 @@
   resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.4.0.tgz#113844add669ace91d245842522f3733ba5bd393"
   integrity sha512-YUZyPu0nC4YDC31mLH5PGxbMoPEH5dNEV+nmgt34GgGgJ0ykDd4PrY7/ph5MAEpQE6rOfov0VN44qQRs6beQow==
   dependencies:
-    xstream "10.x || 11.x"
-
-"@cycle/run@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-4.4.0.tgz#8013702548b1992f665b9f2f42882996871ccf8f"
-  integrity sha512-vVxnTqKKlgasE+we9X2z3og8z5KouO2RMiIgHWkVek+NomsdaeZwfvbutqzm3VToEImaz0DE2Iln9AxtCOVjpQ==
-  dependencies:
-    quicktask "1.1.0"
     xstream "10.x || 11.x"
 
 "@most/multicast@^1.2.5":
