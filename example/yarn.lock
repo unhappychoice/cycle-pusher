@@ -553,10 +553,10 @@ cssauron@^1.4.0:
   dependencies:
     through X.X.X
 
-cycle-pusher@^2.0.2:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/cycle-pusher/-/cycle-pusher-2.0.8.tgz#ff5c46b411a3f9dd4aee3052d6988209cad383e0"
-  integrity sha1-/1xGtBGj+d1K7jBS1piCCcrTg+A=
+cycle-pusher@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/cycle-pusher/-/cycle-pusher-2.0.9.tgz#21726e9bc2a62fad40f4ff3f0268647eb37d6df2"
+  integrity sha512-sVicOcghA6VBIIe/W+UuhukRMX7x8O6qsweJfMNKdq/23yuLmv8SvUtMlgASRvwjm4KbLahVgYMrXPmqZuxn0Q==
   dependencies:
     "@types/pusher-js" "3.0.30"
     pusher-js "^4.2.1"
