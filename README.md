@@ -1,5 +1,9 @@
 # cycle-pusher
 [![npm version](https://badge.fury.io/js/cycle-pusher.svg)](https://badge.fury.io/js/cycle-pusher)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/unhappychoice/cycle-pusher.svg)](https://libraries.io/github/unhappychoice/cycle-pusher)
+![npm bundle size](https://img.shields.io/bundlephobia/min/cycle-pusher.svg)
+![npm](https://img.shields.io/npm/dt/cycle-pusher.svg)
+![GitHub](https://img.shields.io/github/license/unhappychoice/cycle-pusher.svg)
 
 cycle-pusher is pusher client for [cycle.js](https://cycle.js.org/)
 
