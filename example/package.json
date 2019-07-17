@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@cycle/dom": "^18.3.0",
-    "@cycle/http": "14.10.0",
+    "@cycle/http": "15.1.0",
     "@cycle/isolate": "^3.1.0",
     "@cycle/run": "^3.2.0",
     "@types/pusher-js": "3.0.29",
