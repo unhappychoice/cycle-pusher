@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/unhappychoice/cycle-pusher#readme",
   "dependencies": {
-    "@types/pusher-js": "3.0.30",
+    "@types/pusher-js": "4.2.2",
     "pusher-js": "^4.2.1"
   },
   "peerDependencies": {

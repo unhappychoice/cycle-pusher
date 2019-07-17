@@ -26,10 +26,10 @@
     quicktask "1.1.0"
     xstream "10.x || 11.x"
 
-"@types/pusher-js@3.0.30":
-  version "3.0.30"
-  resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-3.0.30.tgz#4e3cffeb2bc8bbd52fd6f42d97662bc4cf07b596"
-  integrity sha512-ooHwLs4nq8EUKlgKVvQI+zSryBAJkFGkhYu2+k1hDg/b34IBq08+k2WP27hjzRJB6kUOWizZzwqKy/tAsEQGDQ==
+"@types/pusher-js@4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-4.2.2.tgz#129fae1854255c5883e874137cd045c48d0a422a"
+  integrity sha512-LP9isBRAFlNzQohQtySJxJjzmy4zQCcv5xGZD2G3rsDnTWfpEkFKyLw3x9711pFAXwwUl9ZivxKkcnFr8umSAQ==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
