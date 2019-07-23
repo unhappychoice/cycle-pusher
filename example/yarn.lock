@@ -2025,6 +2025,11 @@ pusher-js@^4.2.1:
     tweetnacl-util "^0.15.0"
     xmlhttprequest "^1.8.0"
 
+pusher-js@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-5.0.0.tgz#db4132187c314153f3dc68500a615b836b10bd29"
+  integrity sha512-en/ec9ls/1/tY1qFKNddggYzrJtLy3FUoW8mD35S1Fx/MWwlImHluOgrpLvFtEUPy8Wdg95yEJC82NNb2KUtzw==
+
 qs@6.7.0, qs@^6.5.1:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"

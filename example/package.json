@@ -11,7 +11,7 @@
     "@types/pusher-js": "4.2.2",
     "cycle-pusher": "^2.0.9",
     "fuse-box": "^3.7.1",
-    "pusher-js": "^4.2.1",
+    "pusher-js": "^5.0.0",
     "typescript": "^3.5.3",
     "ws": "^7.1.1",
     "xstream": "11.x.x"
