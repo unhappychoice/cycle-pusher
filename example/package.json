@@ -12,7 +12,7 @@
     "cycle-pusher": "^2.0.9",
     "fuse-box": "^3.7.1",
     "pusher-js": "^5.0.3",
-    "typescript": "^3.7.2",
+    "typescript": "^3.7.3",
     "ws": "^7.2.0",
     "xstream": "11.x.x"
   },
