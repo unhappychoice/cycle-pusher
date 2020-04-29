@@ -210,10 +210,10 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
-pusher-js@^5.0.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-5.1.1.tgz#267495d3a821d511bdb20cf3c624ba0556e0b7df"
-  integrity sha512-f2tdoA7NvJQkU8Y/iCH25ZSNGxnwCXrVbwos38isX6gnjsSZ1aksWvyZddm2N0sHJWyl+oPBz/MzU5cevVDyEQ==
+pusher-js@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.0.tgz#b4cb2a85dc7634a43b95ba56f388d672c6aff0a7"
+  integrity sha512-9QmQNReTK8s4Wc3Tdst7VDz+g50WDOOdKEGnCyFpmLQa3/KYpc1U0bZKLS+3dBe1xxbGuVUsFqlWGWa8yZk5gw==
 
 quicktask@1.1.0:
   version "1.1.0"
