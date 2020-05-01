@@ -211,9 +211,11 @@ path-parse@^1.0.6:
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
 pusher-js@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.0.tgz#b4cb2a85dc7634a43b95ba56f388d672c6aff0a7"
-  integrity sha512-9QmQNReTK8s4Wc3Tdst7VDz+g50WDOOdKEGnCyFpmLQa3/KYpc1U0bZKLS+3dBe1xxbGuVUsFqlWGWa8yZk5gw==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.2.tgz#5a43bcca9525a0b083492c21802244f37d9782d6"
+  integrity sha512-fYSeFQ6OcIzpxmdw20pPp2xNRbKDSyU1obZIKzmkONvV2FP+mdgW35PuF9NuJoOoSc4sa/UOrpAkwKw/4XdFQg==
+  dependencies:
+    tweetnacl "^1.0.3"
 
 quicktask@1.1.0:
   version "1.1.0"
@@ -279,6 +281,11 @@ tsutils@^2.29.0:
   integrity sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
   dependencies:
     tslib "^1.8.1"
+
+tweetnacl@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
+  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
 
 typescript@^3.5.3:
   version "3.8.3"
