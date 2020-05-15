@@ -2020,10 +2020,10 @@ pusher-js@^4.2.1:
     tweetnacl-util "^0.15.0"
     xmlhttprequest "^1.8.0"
 
-pusher-js@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.2.tgz#5a43bcca9525a0b083492c21802244f37d9782d6"
-  integrity sha512-fYSeFQ6OcIzpxmdw20pPp2xNRbKDSyU1obZIKzmkONvV2FP+mdgW35PuF9NuJoOoSc4sa/UOrpAkwKw/4XdFQg==
+pusher-js@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-6.0.3.tgz#97e4dabe74bf39cb6978ea649fb9e13d8d7a8721"
+  integrity sha512-l0MHlrpG+D4R6jj+vjqnJNjawBqKCjQ4Y/YARNsWFbXGKNl77xX8pUpbv55Al+dFHGkc7wI2fDXw/BDLleF9Lg==
   dependencies:
     tweetnacl "^1.0.3"
 
