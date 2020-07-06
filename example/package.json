@@ -13,7 +13,7 @@
     "fuse-box": "^3.7.1",
     "pusher-js": "^6.0.3",
     "typescript": "^3.9.6",
-    "ws": "^7.3.0",
+    "ws": "^7.3.1",
     "xstream": "11.x.x"
   },
   "scripts": {
