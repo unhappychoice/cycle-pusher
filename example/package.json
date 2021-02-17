@@ -7,7 +7,7 @@
     "@cycle/dom": "^22.8.0",
     "@cycle/http": "15.4.0",
     "@cycle/isolate": "^5.2.0",
-    "@cycle/run": "^3.2.0",
+    "@cycle/run": "^5.5.0",
     "@types/pusher-js": "4.2.2",
     "cycle-pusher": "^2.0.9",
     "fuse-box": "^4.0.0",
