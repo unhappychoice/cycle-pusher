@@ -32,17 +32,10 @@
     "@cycle/run" "^5.2.0"
     xstream "^11.7.0"
 
-"@cycle/run@^3.2.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-3.4.0.tgz#113844add669ace91d245842522f3733ba5bd393"
-  integrity sha512-YUZyPu0nC4YDC31mLH5PGxbMoPEH5dNEV+nmgt34GgGgJ0ykDd4PrY7/ph5MAEpQE6rOfov0VN44qQRs6beQow==
-  dependencies:
-    xstream "10.x || 11.x"
-
-"@cycle/run@^5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-5.2.0.tgz#08924714d9ae7fa9260d59c1f995095596a884bc"
-  integrity sha512-FTXtJ13I8MkBo7BGBH6S41/vt/Z/s23ZjyhmyTrFGCFxBH5rtIJGcuVPwbSVRlpjFq7G2Vjxd585u+0kANhNvA==
+"@cycle/run@^5.2.0", "@cycle/run@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@cycle/run/-/run-5.5.0.tgz#9b18ec1227a8b0babfd11b1c2cab34dd8f09c2a8"
+  integrity sha512-RZ7Zfai1zfxa0ZP2I4Pu72UgZrRyG3PnivFCe/yYfQBcFHSlUy1biwUTnPB4+k/SE6/cOMTiFqwqu/Y3M+fh1g==
   dependencies:
     quicktask "1.1.0"
     xstream "10.x || 11.x"
