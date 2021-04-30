@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "12:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 20
+  reviewers:
+  - unhappychoice
+  ignore:
+  - dependency-name: typescript
+    versions:
+    - 4.1.4
+    - 4.2.2
+- package-ecosystem: npm
+  directory: "/example"
+  schedule:
+    interval: daily
+    time: "12:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 20
+  reviewers:
+  - unhappychoice
+  ignore:
+  - dependency-name: typescript
+    versions:
+    - 4.1.4
+    - 4.2.2
