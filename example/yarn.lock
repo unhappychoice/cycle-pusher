@@ -95,10 +95,12 @@
   resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-3.0.30.tgz#4e3cffeb2bc8bbd52fd6f42d97662bc4cf07b596"
   integrity sha512-ooHwLs4nq8EUKlgKVvQI+zSryBAJkFGkhYu2+k1hDg/b34IBq08+k2WP27hjzRJB6kUOWizZzwqKy/tAsEQGDQ==
 
-"@types/pusher-js@4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-4.2.2.tgz#129fae1854255c5883e874137cd045c48d0a422a"
-  integrity sha512-LP9isBRAFlNzQohQtySJxJjzmy4zQCcv5xGZD2G3rsDnTWfpEkFKyLw3x9711pFAXwwUl9ZivxKkcnFr8umSAQ==
+"@types/pusher-js@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@types/pusher-js/-/pusher-js-5.1.0.tgz#73d062489dd4e6981c2f2366da1bc2d4634783ba"
+  integrity sha512-VubdW1NvHAojLFtJ+FWmZsIlkSE+EiaLrrfCKcW/t9UDlXWF85rSPVc+5zdpZLVzkwaUaFeyIYSgeNfXc9Dxlg==
+  dependencies:
+    pusher-js "*"
 
 "@types/superagent@3.8.4":
   version "3.8.4"
@@ -1061,6 +1063,13 @@ proxy-addr@~2.0.5:
     forwarded "~0.1.2"
     ipaddr.js "1.9.0"
 
+pusher-js@*, pusher-js@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-7.0.3.tgz#f81c78cdf2ad32f546caa7532ec7f9081ef00b8d"
+  integrity sha512-HIfCvt00CAqgO4W0BrdpPsDcAwy51rB6DN0VMC+JeVRRbo8mn3XTeUeIFjmmlRLZLX8rPhUtLRo7vPag6b8GCw==
+  dependencies:
+    tweetnacl "^1.0.3"
+
 pusher-js@^4.2.1:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-4.4.0.tgz#c52e758c418f8ff9b3221b22291865ffbbc56e32"
@@ -1070,13 +1079,6 @@ pusher-js@^4.2.1:
     tweetnacl "^1.0.0"
     tweetnacl-util "^0.15.0"
     xmlhttprequest "^1.8.0"
-
-pusher-js@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-7.0.3.tgz#f81c78cdf2ad32f546caa7532ec7f9081ef00b8d"
-  integrity sha512-HIfCvt00CAqgO4W0BrdpPsDcAwy51rB6DN0VMC+JeVRRbo8mn3XTeUeIFjmmlRLZLX8rPhUtLRo7vPag6b8GCw==
-  dependencies:
-    tweetnacl "^1.0.3"
 
 qs@6.7.0, qs@^6.5.1:
   version "6.7.0"
