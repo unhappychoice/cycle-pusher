@@ -1108,10 +1108,10 @@ proxy-addr@~2.0.5:
     forwarded "~0.1.2"
     ipaddr.js "1.9.0"
 
-pusher-js@*, pusher-js@^7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-7.4.0.tgz#45205ecc159708af3021f41b15b07b390899124b"
-  integrity sha512-4ewETSlJEdRZ2eHGEMH3pHxMVB+sB4oMmOWbgYbSRsYbTFPOpRBumSEm9NSNse3pfjiluTrB98PaXijJ6BL3lg==
+pusher-js@*, pusher-js@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-7.4.1.tgz#7e0b2086c340e60afeefd259d6cf72529c0ee971"
+  integrity sha512-M+i3Q+Lqnql6g1/AQwIkriJ2NG28cngQgarRbtQCe0r/+Gcx3Z5yIQqd318qhHDq3HpU+k1JOE7z8bydAcG0WQ==
   dependencies:
     "@types/node" "^14.14.31"
     tweetnacl "^1.0.3"
