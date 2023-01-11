@@ -260,10 +260,10 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-pusher-js@*, pusher-js@^7.0.0:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-7.6.0.tgz#8e4535856371be0f475a42b3eec1f8b5614672de"
-  integrity sha512-5CJ7YN5ZdC24E0ETraCU5VYFv0IY5ziXhrS0gS5+9Qrro1E4M1lcZhtr9H1H+6jNSLj1LKKAgcLeE1EH9GxMlw==
+pusher-js@*, pusher-js@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.0.0.tgz#f22e0bf8dcbb70a7342fcf810242c0d6e00620b7"
+  integrity sha512-YGlUEk8PbM/msaQ+bL6nP7f1f0zOb6nNNtE+TRvENfhvs8ctVftBMmnji8qBNdmW8I80X/956jnvt+8wIu80Kg==
   dependencies:
     "@types/express-serve-static-core" "4.17.28"
     "@types/node" "^14.14.31"
