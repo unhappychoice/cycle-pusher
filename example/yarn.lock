@@ -118,15 +118,6 @@
   resolved "https://registry.yarnpkg.com/@types/cookiejar/-/cookiejar-2.1.1.tgz#90b68446364baf9efd8e8349bb36bd3852b75b80"
   integrity sha512-aRnpPa7ysx3aNW60hTiCtLHlQaIFsXFCgQlpakNgDNVFzbtusSY8PwjAQgRWfSk0ekNoBjO51eQRB6upA9uuyw==
 
-"@types/express-serve-static-core@4.17.28":
-  version "4.17.28"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.28.tgz#c47def9f34ec81dc6328d0b1b5303d1ec98d86b8"
-  integrity sha512-P1BJAEAW3E2DJUlkgq4tOL3RyMunoWXqbSCygWo5ZIWTjUgN1YnaXWW4VWl/oc8vs/XoYibEGBKP0uZyF4AHig==
-  dependencies:
-    "@types/node" "*"
-    "@types/qs" "*"
-    "@types/range-parser" "*"
-
 "@types/http-proxy@^1.17.4":
   version "1.17.4"
   resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.4.tgz#e7c92e3dbe3e13aa799440ff42e6d3a17a9d045b"
@@ -134,7 +125,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^14.14.31":
+"@types/node@*":
   version "14.18.24"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.24.tgz#406b220dc748947e1959d8a38a75979e87166704"
   integrity sha512-aJdn8XErcSrfr7k8ZDDfU6/2OgjZcB2Fu9d+ESK8D7Oa5mtsv8Fa8GpcwTA0v60kuZBaalKPzuzun4Ov1YWO/w==
@@ -150,16 +141,6 @@
   integrity sha512-VubdW1NvHAojLFtJ+FWmZsIlkSE+EiaLrrfCKcW/t9UDlXWF85rSPVc+5zdpZLVzkwaUaFeyIYSgeNfXc9Dxlg==
   dependencies:
     pusher-js "*"
-
-"@types/qs@*":
-  version "6.9.7"
-  resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
-  integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
-
-"@types/range-parser@*":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
-  integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
 "@types/superagent@3.8.4":
   version "3.8.4"
@@ -1153,13 +1134,11 @@ proxy-addr@~2.0.7:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
 
-pusher-js@*, pusher-js@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.0.2.tgz#8fe3e2a90bda4bd1aa68f25dd644ffa0ac4dbd0d"
-  integrity sha512-LLWUHLxraa2ro3iKKOg1cLcg7Qoz9NZyxQ+uwTGDEDNtLqsaD5pUK3zbWtMHPmav5d5E0bqpjuSc3y9ycqMtjA==
+pusher-js@*, pusher-js@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.1.0.tgz#1dcfabe01a50dad86e9eef1e41d4e3aeae186c8b"
+  integrity sha512-uccd3kMmcT4c1WB88/DNm6NZsK2Keu0gcSz68EjNJKyXhGQUFCWf3TFuNOCu8lr2LTSbtt+TES4Lg5Qs46NULA==
   dependencies:
-    "@types/express-serve-static-core" "4.17.28"
-    "@types/node" "^14.14.31"
     tweetnacl "^1.0.3"
 
 pusher-js@^4.2.1:
