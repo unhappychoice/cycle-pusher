@@ -232,9 +232,9 @@ path-parse@^1.0.6:
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 pusher-js@*, pusher-js@^8.0.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.1.0.tgz#1dcfabe01a50dad86e9eef1e41d4e3aeae186c8b"
-  integrity sha512-uccd3kMmcT4c1WB88/DNm6NZsK2Keu0gcSz68EjNJKyXhGQUFCWf3TFuNOCu8lr2LTSbtt+TES4Lg5Qs46NULA==
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.2.0.tgz#f94e94c5db4f2e6e84e60f718e73010dc1bff570"
+  integrity sha512-t3WhhR7vgAr5ARl0VNiAqXOb7g4hyW7CNA9Q11tnlcn8dX+1bFZhgRP6IqWVzTX9n7fgjcji3UQ3y8FEMc1o7Q==
   dependencies:
     tweetnacl "^1.0.3"
 
