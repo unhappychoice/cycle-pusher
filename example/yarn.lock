@@ -1134,10 +1134,10 @@ proxy-addr@~2.0.7:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
 
-pusher-js@*, pusher-js@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.2.0.tgz#f94e94c5db4f2e6e84e60f718e73010dc1bff570"
-  integrity sha512-t3WhhR7vgAr5ARl0VNiAqXOb7g4hyW7CNA9Q11tnlcn8dX+1bFZhgRP6IqWVzTX9n7fgjcji3UQ3y8FEMc1o7Q==
+pusher-js@*, pusher-js@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/pusher-js/-/pusher-js-8.3.0.tgz#a40d76c373a56ba8b3de2c55414380cb49975207"
+  integrity sha512-6GohP06WlVeomAQQe9qWh1IDzd3+InluWt+ZUOcecVK1SEQkg6a8uYVsvxSJm7cbccfmHhE0jDkmhKIhue8vmA==
   dependencies:
     tweetnacl "^1.0.3"
 
