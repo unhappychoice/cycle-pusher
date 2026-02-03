@@ -17,7 +17,7 @@
     "noUnusedParameters": true,
     "outDir": "dist",
     "skipDefaultLibCheck": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "sourceMap": true,
     "stripInternal": true,
     "target": "es5",

@@ -1,6 +1,6 @@
+import Pusher from "pusher-js";
 import Stream from "xstream";
 import {PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
-import {Pusher} from "pusher-js";
 
 export class MainPusherSource implements PusherSource {
     private events: Stream<PayloadOutput>;

@@ -8,16 +8,17 @@
     "@cycle/http": "15.4.0",
     "@cycle/isolate": "^5.2.0",
     "@cycle/run": "^5.7.0",
-    "@types/pusher-js": "5.1.0",
-    "cycle-pusher": "^2.0.9",
-    "fuse-box": "^4.0.0",
     "pusher-js": "^8.4.0",
-    "typescript": "^5.9.3",
-    "ws": "^8.19.0",
     "xstream": "11.x.x"
   },
+  "devDependencies": {
+    "cycle-pusher": "file:..",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.9.3"
+  },
   "scripts": {
-    "start": "node fuse"
+    "start": "node fuse.js",
+    "build": "node build.js"
   },
   "author": "unhappychoice",
   "license": "MIT"
