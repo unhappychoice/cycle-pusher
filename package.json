@@ -7,9 +7,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint src/**/*.ts",
-    "watch:lint": "watch 'npm run lint' src",
-    "watch:build": "watch 'npm run build' src",
-    "watch": "watch 'npm run lint && npm run build' src"
+    "watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -37,7 +35,6 @@
     "@cycle/run": "5.x",
     "tslint": "^6.0.0",
     "typescript": "^5.0.2",
-    "watch": "^1.0.2",
     "xstream": "^11.*"
   }
 }
