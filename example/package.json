@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "cycle-pusher": "file:..",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.27.2",
     "typescript": "^5.9.3"
   },
   "scripts": {
