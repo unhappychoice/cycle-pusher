@@ -61,3 +61,7 @@ see example directory for real usage.
 ### License
 
 see [LICENSE](./LICENSE)
+
+## Author
+
+[@unhappychoice](https://unhappychoice.com)
