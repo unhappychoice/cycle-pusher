@@ -9,7 +9,7 @@
     "@cycle/isolate": "^5.2.0",
     "@cycle/run": "^5.7.0",
     "pusher-js": "^8.4.0",
-    "qs": "^6.15.2",
+    "qs": "^6.15.3",
     "xstream": "11.x.x"
   },
   "devDependencies": {
