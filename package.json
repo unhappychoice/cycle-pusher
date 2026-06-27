@@ -36,5 +36,8 @@
     "tslint": "^6.0.0",
     "typescript": "^6.0.2",
     "xstream": "^11.*"
+  },
+  "overrides": {
+    "js-yaml": "^4.2.0"
   }
 }

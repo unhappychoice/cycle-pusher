@@ -21,6 +21,9 @@
     "start": "node fuse.js",
     "build": "node build.js"
   },
+  "overrides": {
+    "form-data": "^2.5.6"
+  },
   "author": "unhappychoice",
   "license": "MIT"
 }
