@@ -1,6 +1,7 @@
-import Pusher from "pusher-js";
+import Pusher, {PresenceChannel} from "pusher-js";
 import Stream from "xstream";
-import {PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
+import {Member, PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
+import {isMembershipEvent, MEMBER_ADDED, MEMBER_REMOVED, toMembers} from "./members";
 
 export class MainPusherSource implements PusherSource {
     private events: Stream<PayloadOutput>;
@@ -13,12 +14,24 @@ export class MainPusherSource implements PusherSource {
     }
 
     public select(channelName: string, eventName: string): Stream<any> {
-        this.bindChannel(channelName, eventName);
-
-        return this.events
-            .filter(event => event.channelName == channelName)
+        return this.channelEvents(channelName)
             .filter(event => event.eventName == eventName)
             .map(event => event.data);
+    }
+
+    public selectMembers(channelName: string): Stream<Member[]> {
+        const changes$ = this.channelEvents(channelName).filter(event => isMembershipEvent(event.eventName));
+
+        return Stream.merge(this.alreadySubscribed(channelName), changes$)
+            .map(() => toMembers((this.pusher.channel(channelName) as PresenceChannel).members));
+    }
+
+    public selectMemberAdded(channelName: string): Stream<Member> {
+        return this.select(channelName, MEMBER_ADDED);
+    }
+
+    public selectMemberRemoved(channelName: string): Stream<Member> {
+        return this.select(channelName, MEMBER_REMOVED);
     }
 
     public isolateSink(sink: Stream<PayloadInput>, _: string): Stream<PayloadInput> {
@@ -29,15 +42,24 @@ export class MainPusherSource implements PusherSource {
         return source;
     }
 
-    private bindChannel(channelName: string, eventName: string) {
-        const identifier  = `${channelName}/${eventName}`;
-        if(this.subscriptions.indexOf(identifier) !== -1) return;
-        const channel = this.pusher.subscribe(channelName) as any;
+    private channelEvents(channelName: string): Stream<PayloadOutput> {
+        this.bindChannel(channelName);
 
-        channel.bind_global((_: any, data: any) => {
+        return this.events.filter(event => event.channelName == channelName);
+    }
+
+    private alreadySubscribed(channelName: string): Stream<any> {
+        return Stream.of(null).filter(() => this.pusher.channel(channelName).subscribed);
+    }
+
+    private bindChannel(channelName: string) {
+        if(this.subscriptions.indexOf(channelName) !== -1) return;
+        const channel = this.pusher.subscribe(channelName);
+
+        channel.bind_global((eventName: string, data: any) => {
             this.events.shamefullySendNext({ channelName, eventName, data })
         });
 
-        this.subscriptions.push(identifier);
+        this.subscriptions.push(channelName);
     }
 }
