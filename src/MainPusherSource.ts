@@ -1,6 +1,7 @@
 import Pusher, {PresenceChannel} from "pusher-js";
 import Stream from "xstream";
 import {Member, PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
+import {isolatePusherSink, isolatePusherSource} from "./isolation";
 import {isMembershipEvent, MEMBER_ADDED, MEMBER_REMOVED, toMembers} from "./members";
 
 export class MainPusherSource implements PusherSource {
@@ -34,12 +35,12 @@ export class MainPusherSource implements PusherSource {
         return this.select(channelName, MEMBER_REMOVED);
     }
 
-    public isolateSink(sink: Stream<PayloadInput>, _: string): Stream<PayloadInput> {
-        return sink;
+    public isolateSink(sink: Stream<PayloadInput>, scope: string): Stream<PayloadInput> {
+        return isolatePusherSink(sink, scope);
     }
 
-    public isolateSource(source: PusherSource, _: string): PusherSource {
-        return source;
+    public isolateSource(source: PusherSource, scope: string): PusherSource {
+        return isolatePusherSource(source, scope);
     }
 
     private channelEvents(channelName: string): Stream<PayloadOutput> {

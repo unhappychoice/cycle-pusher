@@ -84,6 +84,25 @@ function main(sources) {
 
 Subscribing to a presence channel requires an authorization endpoint (see `channelAuthorization` in the pusher options).
 
+### Isolation
+
+The source supports [`@cycle/isolate`](https://cycle.js.org/api/isolate.html). An isolated component gets
+its own channel namespace: the scope is put in front of every channel name it selects or triggers on,
+separated by a `.`. Pusher's `private-`, `private-encrypted-` and `presence-` prefixes stay at the front,
+so the channel type does not change.
+
+```typescript
+const chat = isolate(Chat, "room1");
+
+// Inside Chat:
+sources.pusher.select("messages", "new");                   // listens on "room1.messages"
+sources.pusher.select("presence-members", "pusher:member_added"); // listens on "presence-room1.members"
+// A sink payload with channelName "private-messages" triggers on "private-room1.messages"
+```
+
+Nested isolation stacks the scopes from the outside in (`outer.inner.messages`). Your channel
+authorization endpoint has to accept the scoped names.
+
 see example directory for real usage.
 
 ### License
