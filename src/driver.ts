@@ -9,7 +9,7 @@ export const makePusherDriver = (
 ): Driver<Stream<PayloadInput>, PusherSource> => {
     const socket = new Pusher(app_key, configuration);
 
-    return (payload$: Stream<PayloadInput|null>): PusherSource => {
+    return (payload$: Stream<PayloadInput>): PusherSource => {
         payload$.subscribe({
             next: (payload) => {
                 if (payload) {
