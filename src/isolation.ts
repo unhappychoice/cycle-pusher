@@ -1,5 +1,5 @@
 import Stream from "xstream";
-import {PayloadInput, PusherSource} from "./interfaces";
+import {Member, PayloadInput, PusherSource} from "./interfaces";
 import {scopeChannelName, scopePayload} from "./scope";
 
 export const isolatePusherSink = (sink: Stream<PayloadInput>, scope: string): Stream<PayloadInput> =>
@@ -18,7 +18,19 @@ class ScopedPusherSource implements PusherSource {
     }
 
     public select(channelName: string, eventName: string): Stream<any> {
-        return this.source.select(scopeChannelName(this.scope)(channelName), eventName);
+        return this.source.select(this.scoped(channelName), eventName);
+    }
+
+    public selectMembers(channelName: string): Stream<Member[]> {
+        return this.source.selectMembers(this.scoped(channelName));
+    }
+
+    public selectMemberAdded(channelName: string): Stream<Member> {
+        return this.source.selectMemberAdded(this.scoped(channelName));
+    }
+
+    public selectMemberRemoved(channelName: string): Stream<Member> {
+        return this.source.selectMemberRemoved(this.scoped(channelName));
     }
 
     public isolateSink(sink: Stream<PayloadInput>, scope: string): Stream<PayloadInput> {
@@ -27,5 +39,9 @@ class ScopedPusherSource implements PusherSource {
 
     public isolateSource(source: PusherSource, scope: string): PusherSource {
         return isolatePusherSource(source, scope);
+    }
+
+    private scoped(channelName: string): string {
+        return scopeChannelName(this.scope)(channelName);
     }
 }
