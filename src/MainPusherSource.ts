@@ -1,6 +1,7 @@
 import Pusher from "pusher-js";
 import Stream from "xstream";
 import {PayloadInput, PayloadOutput, PusherSource} from "./interfaces";
+import {isolatePusherSink, isolatePusherSource} from "./isolation";
 
 export class MainPusherSource implements PusherSource {
     private events: Stream<PayloadOutput>;
@@ -21,12 +22,12 @@ export class MainPusherSource implements PusherSource {
             .map(event => event.data);
     }
 
-    public isolateSink(sink: Stream<PayloadInput>, _: string): Stream<PayloadInput> {
-        return sink;
+    public isolateSink(sink: Stream<PayloadInput>, scope: string): Stream<PayloadInput> {
+        return isolatePusherSink(sink, scope);
     }
 
-    public isolateSource(source: PusherSource, _: string): PusherSource {
-        return source;
+    public isolateSource(source: PusherSource, scope: string): PusherSource {
+        return isolatePusherSource(source, scope);
     }
 
     private bindChannel(channelName: string, eventName: string) {
