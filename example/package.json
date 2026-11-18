@@ -15,7 +15,7 @@
   "devDependencies": {
     "cycle-pusher": "file:..",
     "esbuild": "^0.28.2",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "scripts": {
     "start": "node fuse.js",
